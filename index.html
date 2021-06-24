@@ -1,0 +1,91 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>App Survey</title>
+  </head>
+  
+  <body>
+    <header>
+      <h1 id="title">Game Survey <span>Form</span></h1>
+      <p id="description"><span>Thank you</span> for playing our game. Help us to <span>improve</span> our game by answering the questions below.</p>
+    </header>
+    <main class="main">
+      <div class="container">
+        <form id="survey-form" autocomplete="off">
+          <div class="question-div">
+            <label for="name" class="question" id="name-label">Name:</label>
+            <input type="text" id="name" name="name" value="" placeholder="Full Name" required>
+          </div>
+
+          <div class="question-div">
+            <label for="email" class="question" id="email-label">E-mail:</label>
+            <input type="email" id="email" name="email" value="" placeholder="example@gmail.com" required>
+          </div>
+
+          <div class="question-div">
+            <label for="age" class="question" id="number-label">Age:</label>
+            <input type="number" name="age" min="0" id="age" placeholder="Age" required>
+          </div>
+
+          <div class="question-div">
+            <label for="gender" class="question">Gender:</label>
+            <select name="gender" id="dropdown">
+              <option value="male" id="gender" required>Male</option>
+              <option value="female" id="gender">Female</option>
+              <option value="other" id="gender">Other</option>
+            </select>
+          </div>
+
+          <div class="question-div">
+            <p class="question">How did you know/found our game?</p>
+            <div class="choices">
+              <label for="online-community"><input type="radio" name="found" id="online-community" value="online-comminity" required>Online Community</label>
+              <label for="social-media"><input type="radio" name="found" id="social-media" value="social-media">Social Media</label>
+              <label for="friends"><input type="radio" name="found" id="friends" value="friends">Friends</label>
+              <label for="app-store"><input type="radio" name="found" id="app-store" value="app-store">App/Game Store</label>
+            </div>
+          </div>
+
+          <div class="question-div">
+            <p class="question">What device are you using to play the game?</p>
+            <div class="choices">
+              <label for="smartphone"><input type="checkbox" name="device" id="smartphone" value="smartphone">Smartphone</label>
+              <label for="desktop"><input type="checkbox" name="device" id="desktop" value="desktop">Desktop/Laptop</label>
+              <label for="pad"><input type="checkbox" name="device" id="pad" value="pad-devices">Pad devices</label>
+            </div>
+          </div>
+
+          <div class="question-div">
+            <p class="question">How often do you play the  game?</p>
+            <div class="choices" >
+              <label for="a-day"><input type="radio" name="times" id="a-day" value="a-day" required>Once a day</label>
+              <label for="m-day"><input type="radio" name="times" id="m-day" value="m-day">Many times a day</label>
+              <label for="a-week"><input type="radio" name="times" id="a-week" value="a-week">Once a week</label>
+              <label for="t-week"><input type="radio" name="times" id="t-week" value="t-week">Twice a Week</label>
+              <label for="none"><input type="radio" name="times" id="none" value="none">None of the above</label>
+            </div>
+          </div>
+
+          <div class="question-div">
+            <p class="question"> Rate the game between 1 to 10:</p>
+            <input type="number" name="rating" min="1" max="10" placeholder="1-10" required>
+          </div>
+
+          <div class="question-div">
+            <p class="question">Comment / Suggestion:</p>
+            <textarea name="comment" rows="6" col="10" placeholder="Type Here" required></textarea>
+          </div>
+
+          <div class="button">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+          </div>
+
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
